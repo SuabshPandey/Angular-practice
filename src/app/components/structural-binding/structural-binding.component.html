@@ -1,0 +1,24 @@
+<div class="main_div">
+  <h2>1. *ngIf Directive Example</h2>
+  <div class="if_div">
+    <h1 *ngIf="display">Hello {{ userName }}</h1>
+    <input type="text" placeholder="Enter Name" [(ngModel)]="userName" />
+    <button (click)="onClick($event)">{{ btnName }}</button>
+    <br />
+    <br />
+  </div>
+  <h2>2. *ngIf-Else Directive Example</h2>
+  <div class="else_div">
+    <h3 *ngIf="isLoggedIn; then isOldUser; else isNewUser">
+      2. *ngElse Directive Example
+    </h3>
+    <button (click)="isLogin()">{{ loginBtn }}</button>
+    <ng-template #isOldUser>
+      <h3>Welcome Back! {{ userName }}</h3>
+    </ng-template>
+
+    <ng-template #isNewUser>
+      <h3>Please Log In Friend.</h3>
+    </ng-template>
+  </div>
+</div>

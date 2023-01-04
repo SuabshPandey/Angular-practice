@@ -1,0 +1,62 @@
+<div class="form_main_div">
+  <h2>User Form</h2>
+  <input
+    class="form_input"
+    type="text"
+    placeholder="First Name"
+    name="fname"
+    [(ngModel)]="fname"
+  />
+  <br />
+  <input
+    class="form_input"
+    type="text"
+    placeholder="Last Name"
+    name="lname"
+    [(ngModel)]="lname"
+  />
+  <br />
+  <input
+    class="form_input"
+    type="text"
+    placeholder="Email"
+    name="email"
+    [(ngModel)]="email"
+  />
+  <br />
+  <input
+    class="form_input"
+    type="number"
+    placeholder="Mobile Number"
+    name="mobile"
+    [(ngModel)]="mobile"
+  />
+  <br />
+  <input
+    class="form_input"
+    type="password"
+    placeholder="Password"
+    name="mobile"
+    [(ngModel)]="password"
+  />
+  <br />
+  <button class="submit_btn" (click)="onSubmit()">Submit</button>
+  <br />
+  <br />
+</div>
+<div *ngIf="display" class="submit_div">
+  <h1>Submitted Form Data</h1>
+  <h2>
+    First Name: <i> {{ fname }}</i>
+  </h2>
+  <h2>
+    Last Name: <i>{{ lname }}</i>
+  </h2>
+  <h2>
+    Email: <i>{{ email }}</i>
+  </h2>
+  <h2>
+    Mobile Number: <i>{{ mobile }}</i>
+  </h2>
+  <button class="submit_btn" (click)="clear()">Done</button>
+</div>

@@ -1,0 +1,24 @@
+.main_div{
+    margin-top: 60px;
+}
+
+
+.if_div {
+  border: 2px solid grey;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 50%;
+}
+
+.else_div {
+  border: 2px solid grey;
+  margin: auto;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 10px;
+  width: 50%;
+}
