@@ -1,0 +1,21 @@
+.pipes_div {
+  border: 2px solid grey;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 50%;
+}
+
+.list_ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.list_li {
+  list-style: none;
+  font-size: 18px;
+}

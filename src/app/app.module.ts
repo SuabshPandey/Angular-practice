@@ -8,6 +8,7 @@ import { CouterAppComponent } from './components/couter-app/couter-app.component
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { StructuralBindingComponent } from './components/structural-binding/structural-binding.component';
 import { ChildParentComponent } from './components/child-parent/child-parent.component';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ChildParentComponent } from './components/child-parent/child-parent.com
     TwoWayBindingComponent,
     StructuralBindingComponent,
     ChildParentComponent,
+    PipesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

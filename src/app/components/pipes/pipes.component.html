@@ -1,0 +1,16 @@
+<div [ngClass]="'pipes_div'">
+  <h1>Pipes Examples</h1>
+  <p>Different Built-in pipes are available in Angular Js</p>
+  <div ngClass="'list_div'">
+    <div ngClass="list_ul" *ngFor="let pipe of pipesList; index as i">
+      <p [ngClass]="'list_li'">{{ i }} {{ pipe }}</p>
+    </div>
+    <h1>Uppercase Pipe {{ name | uppercase }}</h1>
+    <h1>Lowercase Pipe {{ name | lowercase }}</h1>
+    <h1>Date Pipe {{ myDate | date }}</h1>
+    <h1>
+      JSON Pipe <br />
+      {{ data | json }}
+    </h1>
+  </div>
+</div>
