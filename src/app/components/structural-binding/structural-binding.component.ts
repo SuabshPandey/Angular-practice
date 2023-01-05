@@ -12,6 +12,8 @@ export class StructuralBindingComponent {
   userName = '';
   btnName = 'Show';
   loginBtn = 'Login';
+  items = ['Add Item', 'Remove Item'];
+  itemName = '';
   onClick(event: any) {
     if (this.userName === '') {
       this.display = !this.display;
@@ -29,6 +31,18 @@ export class StructuralBindingComponent {
       this.loginBtn = 'Logout';
     } else {
       this.loginBtn = 'Login';
+    }
+  }
+  addItem() {
+    if (this.itemName !== '') {
+      this.items.push(this.itemName);
+    }
+  }
+  removeItem(index: number) {
+    if (this.items.length > 0) {
+      this.items.splice(index, 1);
+
+      console.log(this.items);
     }
   }
 }

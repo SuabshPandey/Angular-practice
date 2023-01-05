@@ -1,7 +1,6 @@
-.main_div{
-    margin-top: 60px;
+.main_div {
+  margin-top: 60px;
 }
-
 
 .if_div {
   border: 2px solid grey;
@@ -21,4 +20,62 @@
   padding-bottom: 50px;
   margin-top: 10px;
   width: 50%;
+}
+
+.for_loop_div {
+  border: 2px solid grey;
+  margin: auto;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.add_div {
+  margin: auto;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 10px;
+}
+
+.add_input {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 7px;
+  margin-right: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.add_item_btn {
+  padding: 10px 30px;
+  border: 1px solid rgb(250, 250, 250);
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+/* .item_ul {
+  
+} */
+
+.item_list {
+  list-style: none;
+  font-size: 18px;
+  /* border: 1px solid grey; */
+}
+
+.done_btn {
+  padding: 10px 30px;
+  border: 1px solid rgb(250, 250, 250);
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+  
 }

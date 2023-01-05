@@ -7,20 +7,18 @@ import { AppComponent } from './app.component';
 import { CouterAppComponent } from './components/couter-app/couter-app.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { StructuralBindingComponent } from './components/structural-binding/structural-binding.component';
+import { ChildParentComponent } from './components/child-parent/child-parent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CouterAppComponent,
     TwoWayBindingComponent,
-    StructuralBindingComponent
+    StructuralBindingComponent,
+    ChildParentComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
