@@ -21,4 +21,25 @@
       <h3>Please Log In Friend.</h3>
     </ng-template>
   </div>
+
+  <h2>3. ngFor Loop in Angular Js</h2>
+  <div class="for_loop_div">
+    <h3>Looping through an array</h3>
+
+    <div class="add_div">
+      <input
+        [ngClass]="'add_input'"
+        type="text"
+        placeholder="Enter Item"
+        [(ngModel)]="itemName"
+      />
+      <button [ngClass]="'add_item_btn'" (click)="addItem()">Add Item</button>
+
+      <ul [ngClass]="'item_ul'" *ngFor="let item of items; index as i">
+        <li [ngClass]="'item_list'">
+          {{ item }} <button [ngClass]="'done_btn'" (click)="removeItem(i)">Done</button>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
