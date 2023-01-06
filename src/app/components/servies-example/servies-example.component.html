@@ -1,0 +1,24 @@
+<h1>Student Components and User Components Sharing Same Services</h1>
+<p>Services is created once in Service file</p>
+
+<div class="table_class">
+  <table border="border" [width]="500">
+    <tr>
+      <th>S.N</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Roll No</th>
+      <th>Phone</th>
+    </tr>
+    <tr *ngFor="let student of studentList">
+      <td>{{ student.id }}</td>
+      <td>{{ student.name }}</td>
+      <td>{{ student.email }}</td>
+      <td>{{ student.roll }}</td>
+      <td>{{ student.phone }}</td>
+    </tr>
+  </table>
+</div>
+
+<h1>User Services using Student Services</h1>
+<app-user-service></app-user-service>

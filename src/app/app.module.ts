@@ -15,6 +15,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { DialogModule } from 'primeng/dialog';
 
 import { TabViewModule } from 'primeng/tabview';
+import { ServiesExampleComponent } from './components/servies-example/servies-example.component';
+import { UserServiceComponent } from './components/user-service/user-service.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { TabViewModule } from 'primeng/tabview';
     ChildParentComponent,
     PipesComponent,
     PrimeNgComponent,
+    ServiesExampleComponent,
+    UserServiceComponent,
   ],
   imports: [
     BrowserModule,

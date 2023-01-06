@@ -1,0 +1,20 @@
+<h1>Student Data Created In User Service</h1>
+
+<div class="table_class">
+  <table border="border" [width]="500">
+    <tr>
+      <th>S.N</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Roll No</th>
+      <th>Phone</th>
+    </tr>
+    <tr *ngFor="let user of userList">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.roll }}</td>
+      <td>{{ user.phone }}</td>
+    </tr>
+  </table>
+</div>
