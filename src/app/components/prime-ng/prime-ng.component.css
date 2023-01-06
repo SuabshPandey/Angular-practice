@@ -1,0 +1,20 @@
+.btn_div {
+  border: 1px solid rgb(214, 214, 214);
+}
+.submit_btn {
+  margin-top: 20px;
+}
+
+.input_div {
+  margin-top: 20px;
+  border: 1px solid rgb(212, 212, 212);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.dialog_box_div {
+  margin-top: 20px;
+  border: 1px solid rgb(214, 214, 214);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
