@@ -1,0 +1,170 @@
+<!-- Prime Buttons  -->
+
+<div class="btn_div">
+  <h3>Prime Buttons</h3>
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-check"
+    class="p-button-rounded p-button-text"
+    (click)="onClick()"
+  >
+    Hello
+  </button>
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-bookmark"
+    class="p-button-rounded p-button-secondary p-button-text"
+    (click)="onClick()"
+  >
+    Hello
+  </button>
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-search"
+    class="p-button-rounded p-button-success p-button-text"
+    (click)="onClick()"
+  >
+    Hello
+  </button>
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-user"
+    class="p-button-rounded p-button-info p-button-text"
+    (click)="onClick()"
+  >
+    Hello
+  </button>
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-bell"
+    class="p-button-rounded p-button-warning p-button-text"
+    (click)="onClick()"
+  >
+    Hello
+  </button>
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-heart"
+    class="p-button-rounded p-button-help p-button-text"
+    (click)="onClick()"
+  >
+    Hello
+  </button>
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-times"
+    class="p-button-rounded p-button-danger p-button-text"
+    (click)="onClick()"
+  >
+    Hello
+  </button>
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-filter"
+    class="p-button-rounded p-button-text p-button-plain"
+    (click)="onClick()"
+  >
+    Hello
+  </button>
+</div>
+
+<!-- Prime Input Fields -->
+
+<div class="input_div">
+  <h3>Prime Input Field</h3>
+  <div class="field">
+    <!-- <label for="username1" class="block">Username</label> -->
+    <input
+      id="username1"
+      type="username"
+      placeholder="Username"
+      aria-describedby="username1-help"
+      pInputText
+      [(ngModel)]="fname"
+    />
+  </div>
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-check"
+    class="p-button-outlined submit_btn"
+    (click)="onSubmit()"
+  >
+    Submit
+  </button>
+</div>
+
+<!-- Prime Tabs -->
+
+<div class="tab_view_div">
+  <h3>Prime TabView</h3>
+  <p-tabView>
+    <p-tabPanel header="Tab-1">
+      <h1>Content of Tab-1</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, neque!
+      </p>
+    </p-tabPanel>
+    <p-tabPanel header="Tab-2">
+      <h1>Content of Tab-2</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, neque!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quidem.
+      </p>
+    </p-tabPanel>
+    <p-tabPanel header="Tab-3">
+      <h1>Content of Tab-3</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, neque!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quidem.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, aperiam?
+      </p>
+    </p-tabPanel>
+    <p-tabPanel header="Tab-4">
+      <h1>Content of Tab-4</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, neque!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quasi?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+        sapiente.
+      </p> </p-tabPanel
+    ><p-tabPanel header="Tab-5">
+      <h1>Content of Tab-5</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, neque!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+        eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+        harum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Blanditiis, temporibus.
+      </p>
+    </p-tabPanel>
+  </p-tabView>
+</div>
+
+<!-- Prime Dialog Box -->
+
+<div class="dialog_box_div">
+  <h3>Prime Dialog Box</h3>
+
+  <p-dialog header="Modal Form" [visible]="display"> Content </p-dialog>
+  <p-button (click)="showDialog()">Show</p-button>
+</div>

@@ -9,6 +9,12 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
 import { StructuralBindingComponent } from './components/structural-binding/structural-binding.component';
 import { ChildParentComponent } from './components/child-parent/child-parent.component';
 import { PipesComponent } from './components/pipes/pipes.component';
+import { PrimeNgComponent } from './components/prime-ng/prime-ng.component';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { DialogModule } from 'primeng/dialog';
+
+import { TabViewModule } from 'primeng/tabview';
 
 @NgModule({
   declarations: [
@@ -18,8 +24,17 @@ import { PipesComponent } from './components/pipes/pipes.component';
     StructuralBindingComponent,
     ChildParentComponent,
     PipesComponent,
+    PrimeNgComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ButtonModule,
+    InputTextModule,
+    TabViewModule,
+    DialogModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
