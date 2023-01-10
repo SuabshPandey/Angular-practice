@@ -17,6 +17,7 @@ import { DialogModule } from 'primeng/dialog';
 import { TabViewModule } from 'primeng/tabview';
 import { ServiesExampleComponent } from './components/servies-example/servies-example.component';
 import { UserServiceComponent } from './components/user-service/user-service.component';
+import { StudentService } from './services/student.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { UserServiceComponent } from './components/user-service/user-service.com
     TabViewModule,
     DialogModule,
   ],
-  providers: [],
+  providers: [StudentService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
