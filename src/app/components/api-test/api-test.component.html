@@ -1,0 +1,38 @@
+<div>
+  <form [formGroup]="checkboxForm" (ngSubmit)="handleSubmit()">
+    <input type="text" name="uname" placeholder="Username" />
+    <div class="all_permission_div" *ngFor="let perNames of permissionList">
+      <p-button
+        label="{{ perNames.moduleName }}"
+        icon="{{ expand ? 'pi pi-plus' : 'pi pi-minus' }}"
+        [style]="{
+          backgroundColor: '#2E90BD',
+          color: '#fff',
+          border: 'none',
+          borderRadius: '5px'
+        }"
+      ></p-button>
+      <div *ngIf="expand" class="mt-5 permission_list_div">
+        <p-checkbox
+          *ngFor="let privList of perNames.priviliage"
+          [value]="privList.value"
+          [label]="privList.name"
+          class="permission_checkbox"
+          formArrayName="permissionArray"
+          (onChange)="handleChange($event)"
+          name="permissionArray"
+        ></p-checkbox>
+      </div>
+    </div>
+    <p-button
+      label="Submit"
+      type="submit"
+      [style]="{
+        backgroundColor: '#2E90BD',
+        color: '#fff',
+        border: 'none',
+        borderRadius: '5px'
+      }"
+    ></p-button>
+  </form>
+</div>
